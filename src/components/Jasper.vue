@@ -38,6 +38,9 @@
           <a class="pa-5 ma-2" href="https://www.twitch.tv/jasper7se" target="_blank">
             <img src="../assets/twitch.png" alt="Twitch" width="36px">
           </a>
+          <a class="pa-5 ma-2" href="https://github.com/Lycheejam/anti_jasper7se" target="_blank">
+            <img src="../assets/github_white.png" alt="Github" width="42px">
+          </a>
         </v-row>
         
       </v-col>
