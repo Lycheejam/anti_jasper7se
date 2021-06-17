@@ -11,7 +11,7 @@
     <div id="background2"></div>
 
     <v-row justify="end" align-content="center" style="height: 100%; z-index: 4;">
-      <v-col cols="6">
+      <v-col xs="12" sm="6">
 
         <v-row justify="center" class="pa-5">
           <v-avatar
@@ -75,6 +75,9 @@
   margin: auto;
   font-size: 128px;
   z-index: 2;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
 }
 
 #background2 {
