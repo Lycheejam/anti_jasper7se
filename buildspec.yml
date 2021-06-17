@@ -1,0 +1,26 @@
+version: 0.2
+
+#
+# GitHub -> CodeBuild -> S3 -> CloudFront
+#
+
+phases:
+  install:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install
+  build:
+    commands:
+      - echo build start
+      - npm run build
+      - echo build completed
+  post_build:
+    commands:
+      - echo Delete S3 Bucket object...
+      - aws s3 rm s3://${S3_BUCKET_NAME} --recursive
+      - echo create invalidation 
+      - aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_DISTRIBUTION_ID} --paths '/*'
+artifacts:
+  files:
+    - '**/*'
+  base-directory: 'dist'
