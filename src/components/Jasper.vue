@@ -15,7 +15,7 @@
 
         <v-row justify="center" class="pa-5">
           <v-avatar
-            size="128"
+            size="256"
           >
             <img src="https://pbs.twimg.com/media/DxvbpsCU8AA0lwt?format=jpg">
           </v-avatar>
