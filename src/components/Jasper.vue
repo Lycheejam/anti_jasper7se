@@ -52,6 +52,12 @@
 <script>
   export default {
     name: 'Jasper',
+
+    methods: {
+      track () {
+        this.$ga.page('/')
+      }
+    }
   }
 </script>
 
