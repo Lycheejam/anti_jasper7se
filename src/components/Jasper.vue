@@ -1,6 +1,6 @@
 <template>
   <v-container fluid fill-height>
-    <video autoplay muted loop id="background">
+    <video autoplay muted loop playsinline id="background">
       <source src="../assets/welcome_jasper_540_non_audio.mp4" type="video/mp4">
     </video>
 
